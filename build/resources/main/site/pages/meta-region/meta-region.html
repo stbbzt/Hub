@@ -1,0 +1,19 @@
+<!-- page component with a single region called “Main”  Here we can place the “article” part into this region.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artikkel og meta</title>
+</head>
+<body data-portal-component-type="page">
+    <div data-portal-region="main">
+        <div data-th-if="${mainRegion}" data-th-each="component : ${mainRegion.components}" data-th-remove="tag">
+            <div data-portal-component="${component.path}" data-th-remove="tag"></div>
+        </div>
+    </div>
+    <!--div data-portal-region="article">
+        <div data-th-if="${articleRegion}" data-th-each="component : ${articleRegion.components}" data-th-remove="tag">
+            <div data-portal-component="${component.path}" data-th-remove="tag"></div>
+        </div>
+    </div-->
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!--div class="main site-main three-col">
+
+    <div class="widget-area col-3 col-3-left" role="main" data-portal-region="left">
+        <div data-th-each="component : ${leftRegion.components}" data-th-remove="tag">
+            <div data-portal-component="${component.path}" data-th-remove="tag"/>
+        </div>
+    </div>
+    <div class="widget-area col-3 col-3-middle" role="complementary" data-portal-region="middle">
+        <div data-th-each="component : ${middleRegion.components}" data-th-remove="tag">
+            <div data-portal-component="${component.path}" data-th-remove="tag"/>
+        </div>
+    </div>
+    <div class="widget-area col-3 col-3-right" role="complementary" data-portal-region="right">
+        <div data-th-each="component : ${rightRegion.components}" data-th-remove="tag">
+            <div data-portal-component="${component.path}" data-th-remove="tag"/>
+        </div>
+    </div>
+</div-->
+
+<div class="main site-main">
+
+<div class="article__related-items section-grid section-grid--four">
+    <div class="section-grid__wrapper">
+      <h4 class="section-grid__title">Relevante artikler</h4>
+        <div class="section-grid__content">
+        
+            <div class="section__grid-item grid-item grid-item--simple" role="main" data-portal-region="main">
+                <a class="grid-item__content" href="#">
+                    <div data-th-each="component : ${mainRegion.components}" data-th-remove="tag">
+                        <div data-portal-component="${component.path}" data-th-remove="tag"/>
+                    </div>
+                </a>
+            </div>
+
+            <div class="section__grid-item grid-item grid-item--simple" role="complementary" data-portal-region="two">
+                <a class="grid-item__content" href="#">
+                    <div data-th-each="component : ${twoRegion.components}" data-th-remove="tag">
+                        <div data-portal-component="${component.path}" data-th-remove="tag"/>
+                    </div>
+                </a>
+            </div>
+
+            <div class="section__grid-item grid-item grid-item--simple" role="complementary" data-portal-region="three">
+                <a class="grid-item__content" href="#">
+                    <div data-th-each="component : ${threeRegion.components}" data-th-remove="tag">
+                        <div data-portal-component="${component.path}" data-th-remove="tag"/>
+                    </div>
+                </a>
+            </div>
+
+            <div class="section__grid-item grid-item grid-item--simple" role="complementary" data-portal-region="four">
+                <a class="grid-item__content" href="#">
+                    <div data-th-each="component : ${fourRegion.components}" data-th-remove="tag">
+                        <div data-portal-component="${component.path}" data-th-remove="tag"/>
+                    </div>
+                </a>
+            </div>         
+            
+       
+        </div>
+    </div>
+
+</div>
+</div>

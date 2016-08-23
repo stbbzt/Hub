@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<layout-component>
+  <display-name>Four columns</display-name>
+  <config/>
+  <regions>
+    <region name="one"/>
+    <region name="two"/>
+    <region name="three"/>
+    <region name="four"/>
+  </regions>
+</layout-component>

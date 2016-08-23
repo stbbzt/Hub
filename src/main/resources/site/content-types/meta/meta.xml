@@ -1,0 +1,31 @@
+<content-type>
+  <display-name>Meta</display-name>
+  <super-type>base:structured</super-type>
+  <form>
+
+    <input name="topImage" type="ImageSelector">
+      <label>Bilde (valgfritt)</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+
+    <input type="TextLine" name="author">
+      <label>Author</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+
+    <input type="TextArea" name="heading">
+      <label>Heading</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+
+    <input type="TextArea" name="preface">
+      <label>Preface</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+
+    <input type="TextLine" name="duration">
+      <label>Duration</label>
+      <occurrences minimum="0" maximum="1"/>
+    </input>
+  </form>
+</content-type>
