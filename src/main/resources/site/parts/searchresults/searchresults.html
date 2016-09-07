@@ -1,0 +1,27 @@
+
+<ol>
+
+    <!-- <li>
+        <h2 data-th-text="firstList.title"></h2>
+    </li> -->
+    <li data-th-each="hit, iterStat : ${hits}">
+
+        <if data-th-if="${iterStat.index} == 0" data-th-remove="tag">
+            <div>
+                <a data-th-href="${portal.pageUrl({'_id=' + hit._id})}" >
+                    <h2 data-th-text="${hit.data.title}" style="color:red"/>
+                </a>
+            </div>
+        </if>
+
+        <if data-th-if="${iterStat.index} > 0" data-th-remove="tag">
+            <div>
+                <a data-th-href="${portal.pageUrl( {'_id=' + hit._id} )}" >
+                    <h2 data-th-text="${hit.data.title}"/>
+                </a>
+            </div>
+        </if>
+
+    </li>
+
+</ol>

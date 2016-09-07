@@ -1,8 +1,0 @@
-<page>
-  <display-name>Meta Region</display-name>
-  <config/>
-  <regions>
-    <region name="main"/>
-    <!--region name="article"/-->
-  </regions>
-</page>

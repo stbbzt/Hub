@@ -1,0 +1,68 @@
+<content-type>
+  <display-name>Innhold</display-name>
+  <super-type>base:structured</super-type>
+  <form>
+      <input name="type" type="RadioButton">
+          <label>Innholdstype</label>
+          <occurrences minimum="1" maximum="1"/>
+          <config>
+            <option value="article">Artikkel</option>
+            <option value="feature">Reportasje</option>
+            <option value="tips">Tips</option>
+          </config>
+          <default>one</default>
+        </input>
+      <input name="title" type="TextLine">
+        <label>Tittel</label>
+        <occurrences minimum="1" maximum="1"/>
+        </input>
+        <input name="mainImage" type="ImageSelector">
+          <label>Hovedbilde</label>
+          <occurrences minimum="0" maximum="1"/>
+        </input>
+        <input name="preface" type="TextArea">
+          <label>Ingress</label>
+        </input>
+        <input name="body" type="HtmlArea">
+          <label>Brødtext</label>
+        </input>
+
+        <item-set name="tips">
+            <label>Tips</label>
+            <occurrences minimum="0" maximum="0" />
+            <items>
+                <input name="title" type="TextLine">
+                  <label>Tittel</label>
+                  <occurrences minimum="1" maximum="1"/>
+                  </input>
+                  <input name="mainImage" type="ImageSelector">
+                    <label>Hovedbilde</label>
+                    <occurrences minimum="0" maximum="1"/>
+                  </input>
+                  <input name="preface" type="TextArea">
+                    <label>Ingress</label>
+                  </input>
+            </items>
+        </item-set>
+        <item-set name="bags">
+            <label>Tags</label>
+            <occurrences minimum="0" maximum="0" />
+            <items>
+                <input name="mainTag" type="Tag">
+                  <label>Hovedtag</label>
+                  <occurrences minimum="0" maximum="1"/>
+                </input>
+                <input name="topTags" type="Tag">
+                  <label>Top tagger</label>
+                  <occurrences minimum="0" maximum="5"/>
+                </input>
+                <input name="tags" type="Tag">
+                  <label>Tagger</label>
+                  <occurrences minimum="0" maximum="0"/>
+                </input>
+            </items>
+        </item-set>
+
+
+  </form>
+</content-type>

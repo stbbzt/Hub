@@ -1,0 +1,9 @@
+<!--Parts are reusable components that can be added to pages containing “regions” -->
+<div>
+    <h1 data-th-text="${name}"></h1>
+    <h2> Her kommer selve artikkelen</h2>
+    <h3 data-th-text="${content.data.title}" />
+    <div data-th-if="${content.data.body}" data-th-text="${portal.processHtml({'_value=' + content.data.body})}"></div>
+
+    <p style="color:blue;">Stopp</p>
+</div>

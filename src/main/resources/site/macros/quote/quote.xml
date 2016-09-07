@@ -1,0 +1,13 @@
+<macro>
+  <display-name>Sitat</display-name>
+  <description>Legg inn et sitat</description>
+
+  <form>
+    <input name="quoteText" type="TextLine">
+      <label>Sitat</label>
+    </input>
+    <input name="source" type="TextLine">
+      <label>Kilde</label>
+    </input>
+  </form>
+</macro>

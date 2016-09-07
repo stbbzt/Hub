@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <site>
-  <config/>
+  <config>
+      <field-set name="header">
+        <label>Header</label>
+        <items>
+            <input name="title" type="TextLine">
+              <label>Tittel</label>
+              <occurrences minimum="1" maximum="1"/>
+              </input>
+        </items>
+      </field-set>
+  </config>
 </site>
